@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/assets/icons-remixIcons/remixicon.css">
+    <title>Email_NODEjs</title>
+</head>
+<body>
+    <div class="container_h1_form">
+        <h1>Enviando e-mails com <span class="nodejs">Node.js</span></h1>
+        <form action="http://localhost:3000/enviar_email" method="post">
+            <label for="userName">
+                <i class="icons_form ri-user-3-line"></i>
+                Nome:
+            </label>
+            <input type="text" name="userName" id="userName" placeholder="Digite seu nome" required>
+            <label for="userEmail">
+                <i class="icons_form ri-mail-line"></i>
+                Email:
+            </label>
+            <input type="email" name="userEmail" id="userEmail" placeholder="seu-email@email.com" required>
+            <label for="textArea">
+                <i class="icons_form ri-chat-1-line"></i>
+                Mensagem:
+            </label>
+            <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <a class="container_by" href="https://developer-gilberto.github.io/portifolio-gilberto/" target="_blank" rel="noopener noreferrer">
+            <p class="by">By </p>
+            <img class="logo" src="./src/assets/img/logo_developer-gilberto.png" alt="LOGO Developer/Gilberto">
+        </a>
+    </div>
+</body>
+</html>
